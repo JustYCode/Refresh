@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WelcomeViewController" customModule="Rubulls_IOS" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aUt-1T-d6Z">
+                    <rect key="frame" x="0.0" y="557" width="375" height="110"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="Ohk-RI-Ezz">
+                            <rect key="frame" x="60" y="17" width="255" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="255" id="DrT-MA-PvD"/>
+                                <constraint firstAttribute="height" constant="44" id="Zud-EY-19p"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ver:2.0. Copyright©2017, Rubulls.com" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lZh-PH-KoB">
+                            <rect key="frame" x="53" y="69" width="262" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="262" id="AI5-9b-knS"/>
+                                <constraint firstAttribute="height" constant="21" id="UBM-Gv-BoA"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.73333333329999995" green="0.71764705880000002" blue="0.70588235290000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="110" id="FOW-5R-LxY"/>
+                        <constraint firstItem="lZh-PH-KoB" firstAttribute="top" secondItem="Ohk-RI-Ezz" secondAttribute="bottom" constant="8" id="HCY-q8-UON"/>
+                        <constraint firstItem="Ohk-RI-Ezz" firstAttribute="top" secondItem="aUt-1T-d6Z" secondAttribute="top" constant="17" id="VW9-k6-FSw"/>
+                        <constraint firstItem="lZh-PH-KoB" firstAttribute="centerX" secondItem="aUt-1T-d6Z" secondAttribute="centerX" constant="-3.5" id="WJh-jT-AG4"/>
+                        <constraint firstItem="Ohk-RI-Ezz" firstAttribute="centerX" secondItem="aUt-1T-d6Z" secondAttribute="centerX" id="mRi-pd-29y"/>
+                    </constraints>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ad" translatesAutoresizingMaskIntoConstraints="NO" id="1Y8-R6-tOA">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="557"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="aUt-1T-d6Z" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="8GP-PE-XbM"/>
+                <constraint firstItem="aUt-1T-d6Z" firstAttribute="top" secondItem="1Y8-R6-tOA" secondAttribute="bottom" id="8pG-bu-XEe"/>
+                <constraint firstItem="1Y8-R6-tOA" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Mge-8Z-eR5"/>
+                <constraint firstItem="1Y8-R6-tOA" firstAttribute="trailing" secondItem="aUt-1T-d6Z" secondAttribute="trailing" id="b9S-Cx-UV4"/>
+                <constraint firstItem="1Y8-R6-tOA" firstAttribute="leading" secondItem="aUt-1T-d6Z" secondAttribute="leading" id="trI-Oa-66N"/>
+                <constraint firstAttribute="bottom" secondItem="aUt-1T-d6Z" secondAttribute="bottom" id="vnO-mK-EPe"/>
+                <constraint firstAttribute="trailing" secondItem="aUt-1T-d6Z" secondAttribute="trailing" id="xit-ok-7M5"/>
+            </constraints>
+            <point key="canvasLocation" x="33.5" y="53.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ad" width="621" height="893"/>
+        <image name="logo" width="180" height="30"/>
+    </resources>
+</document>

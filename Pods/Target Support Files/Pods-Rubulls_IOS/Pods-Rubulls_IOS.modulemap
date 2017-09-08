@@ -1,0 +1,6 @@
+framework module Pods_Rubulls_IOS {
+  umbrella header "Pods-Rubulls_IOS-umbrella.h"
+
+  export *
+  module * { export * }
+}
